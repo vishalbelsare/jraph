@@ -64,6 +64,7 @@ from jraph._src.utils import segment_normalize
 from jraph._src.utils import segment_softmax
 from jraph._src.utils import segment_sum
 from jraph._src.utils import segment_variance
+from jraph._src.utils import sparse_matrix_to_graphs_tuple
 from jraph._src.utils import unbatch
 from jraph._src.utils import unbatch_np
 from jraph._src.utils import unpad_with_graphs
@@ -71,7 +72,7 @@ from jraph._src.utils import with_zero_out_padding_outputs
 from jraph._src.utils import zero_out_padding
 
 
-__version__ = "0.0.2.dev0"
+__version__ = "0.0.6.dev0"
 
 __all__ = ("ArrayTree", "DeepSets", "GraphConvolution", "GraphMapFeatures",
            "InteractionNetwork", "RelationNetwork", "GraphNetGAT", "GAT",
@@ -91,7 +92,8 @@ __all__ = ("ArrayTree", "DeepSets", "GraphConvolution", "GraphMapFeatures",
            "segment_min_or_constant", "segment_softmax", "segment_sum",
            "partition_softmax", "concatenated_args",
            "get_fully_connected_graph", "dynamically_batch",
-           "with_zero_out_padding_outputs", "zero_out_padding")
+           "with_zero_out_padding_outputs", "zero_out_padding",
+           "sparse_matrix_to_graphs_tuple")
 
 #  _________________________________________
 # / Please don't use symbols in `_src` they \
